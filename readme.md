@@ -39,6 +39,7 @@ All programs generate structured outputs in `.txt` files, ensuring reproducibili
 
 Each problem has been modularized into its own script, maintaining **single-responsibility design** and **consistent I/O format**.  
 
+```sh
 DM_IA2_ARYAN_LOMTE/
 │
 ├── main.py → Runs all modules sequentially
@@ -58,7 +59,7 @@ DM_IA2_ARYAN_LOMTE/
 ├── Q5_output.txt
 ├── Q6_output.txt
 └── Q7_output.txt
-
+```
 Each module automatically:
 - Executes computation.
 - Prints stepwise derivations.
@@ -86,63 +87,80 @@ To run all modules and generate outputs automatically:
 
 ```bash
 python main.py
-Each script can also be executed individually for focused testing:
+```
+
 ---
 
-🧭 Output Format Example
-Each output file provides:
+## 🧭 Output Format Example  
+Each script can also be executed individually for focused testing and each output file provides:  
+1. **Concept Header**  
+2. **Inputs** (either user-defined or randomly generated)  
+3. **Stepwise Computation Process**  
+4. **Final Result and Verification**  
+5. **Status:** ✅ *MATCH* / ❌ *FAIL*  
 
-Concept Header
+**Example excerpt — `Q1_SetTheory_InclusionExclusion.py`:**
 
-Inputs (either user-defined or random)
-
-Stepwise Computation Process
-
-Final Result and Verification
-
-Status: MATCH ✅ / FAIL ❌
-
-Example excerpt (Q1_SetTheory_InclusionExclusion.py):
-
-mathematica
-Copy code
 |A ∪ B ∪ C| = |A| + |B| + |C| - |A∩B| - |B∩C| - |A∩C| + |A∩B∩C|
 |A ∪ B ∪ C| = 3 + 4 + 5 - 2 - 1 - 1 + 1
 By Inclusion–Exclusion = 9
-By Direct Union       = 9
+By Direct Union = 9
 Verification: MATCH ✅
-🧩 Libraries Used
-SymPy – symbolic mathematics, sets, and logic simplification
 
-NumPy – matrix manipulation for relations and graphs
 
-NetworkX – graph representation (for Hamiltonian/Euler checks)
 
-Random – pigeonhole simulation
+---
 
-itertools – combinatorial enumeration for graph paths
+## 🧩 Libraries Used  
 
-🧬 Theoretical Significance
-This project bridges the axiomatic rigor of discrete mathematics with the applied logic of computer science.
-It validates classical mathematical reasoning — proofs, relations, and structures — through automated verification, aligning theoretical education with computational practice.
+| Library | Purpose |
+|----------|----------|
+| **SymPy** | Symbolic mathematics, set operations, and logic simplification |
+| **NumPy** | Matrix manipulation for relations and graph structures |
+| **NetworkX** | Graph representation for Hamiltonian and Eulerian checks |
+| **random** | Pigeonhole principle simulations with randomization |
+| **itertools** | Combinatorial enumeration and path generation for graphs |
 
-By transforming abstract logic into executable code, this work reinforces how discrete mathematics forms the logical backbone of algorithms, networks, cryptography, and data structures.
+---
 
-🏁 Future Enhancements
-Interactive GUI using Tkinter for live mathematical visualization.
+## 🧬 Theoretical Significance  
 
-Symbolic proof generator for predicate logic and induction.
+This project bridges the **axiomatic rigor of discrete mathematics** with the **applied logic of computer science**.  
+It validates classical mathematical reasoning — *proofs, relations, and structures* — through automated computation, aligning theoretical education with computational verification.  
 
-Graph visualizer for dynamic traversal animations.
+By transforming **abstract logic into executable algorithms**, this work reinforces how discrete mathematics underpins:  
+- Algorithm design  
+- Network theory  
+- Cryptography  
+- Data structures  
+- Formal verification systems  
 
-Automated LaTeX report generation from output logs.
+🧠 *In essence, this repository transforms the logic of thought into the language of machines.*
 
-📜 License
-This project is released for educational and academic demonstration under the MIT License.
-Attribution is appreciated where reused.
+---
 
-🏫 Academic Integrity
-All implementations were written from first principles with adherence to academic integrity.
-Each module reflects both algorithmic correctness and conceptual clarity, as expected in a professional engineering submission.
+## 🏁 Future Enhancements  
 
-“The essence of mathematics lies in its freedom.” — Georg Cantor
+- 🖥️ **Interactive GUI** using *Tkinter* for live mathematical visualization  
+- 📘 **Symbolic Proof Generator** for predicate logic and mathematical induction  
+- 🌐 **Graph Visualizer** for dynamic traversal and structure animation  
+- 🧾 **Automated LaTeX Report Generator** for well-formatted mathematical documentation  
+
+---
+
+## 📜 License  
+
+This project is released for **educational and academic demonstration** under the [MIT License](LICENSE).  
+Attribution is appreciated where reused or referenced.  
+
+---
+
+## 🏫 Academic Integrity  
+
+All implementations were written from **first principles** with full adherence to **academic integrity**.  
+Each module reflects both **algorithmic correctness** and **conceptual clarity**, as expected in a professional engineering submission.  
+
+> “The essence of mathematics lies in its freedom.”  
+> — *Georg Cantor*
+
+---
