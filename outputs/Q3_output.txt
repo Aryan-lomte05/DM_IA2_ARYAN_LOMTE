@@ -1,0 +1,46 @@
+=== Q3: Warshall’s Algorithm for Transitive Closure ===
+
+Initial Relation Matrix R:
+[1 1 0 0]
+[0 1 1 0]
+[0 0 1 1]
+[0 0 0 1]
+
+Considering intermediate vertex k=1:
+Updated Matrix:
+[1 1 0 0]
+[0 1 1 0]
+[0 0 1 1]
+[0 0 0 1]
+
+Considering intermediate vertex k=2:
+Path found: 1 → 2 → 3, setting R[1][3] = 1
+Updated Matrix:
+[1 1 1 0]
+[0 1 1 0]
+[0 0 1 1]
+[0 0 0 1]
+
+Considering intermediate vertex k=3:
+Path found: 1 → 3 → 4, setting R[1][4] = 1
+Path found: 2 → 3 → 4, setting R[2][4] = 1
+Updated Matrix:
+[1 1 1 1]
+[0 1 1 1]
+[0 0 1 1]
+[0 0 0 1]
+
+Considering intermediate vertex k=4:
+Updated Matrix:
+[1 1 1 1]
+[0 1 1 1]
+[0 0 1 1]
+[0 0 0 1]
+
+Final Transitive Closure R*:
+[1 1 1 1]
+[0 1 1 1]
+[0 0 1 1]
+[0 0 0 1]
+
+✅ Output successfully saved to Q3_output.txt

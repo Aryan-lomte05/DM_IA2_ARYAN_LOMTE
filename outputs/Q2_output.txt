@@ -1,0 +1,24 @@
+=== Q2: Predicate Logic + Mathematical Induction Verifier ===
+
+Evaluating: ∀x ∃y (x < y) over domain [1, 2, 3, 4]
+For x=1, ∃y → True
+For x=2, ∃y → True
+For x=3, ∃y → True
+For x=4, ∃y → False
+Final Result: False ❌
+
+Verifying Induction Formula:
+Σ(n²) = n(n+1)(2n+1)/6
+
+n=1: LHS=1, RHS=1 → OK ✅
+n=2: LHS=5, RHS=5 → OK ✅
+n=3: LHS=14, RHS=14 → OK ✅
+n=4: LHS=30, RHS=30 → OK ✅
+n=5: LHS=55, RHS=55 → OK ✅
+n=6: LHS=91, RHS=91 → OK ✅
+n=7: LHS=140, RHS=140 → OK ✅
+n=8: LHS=204, RHS=204 → OK ✅
+n=9: LHS=285, RHS=285 → OK ✅
+n=10: LHS=385, RHS=385 → OK ✅
+
+✅ Output successfully saved to Q2_output.txt

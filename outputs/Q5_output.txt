@@ -1,0 +1,29 @@
+=== Q5: Deterministic Pigeonhole Principle ===
+
+Total Pigeons = 24, Total Holes = 20
+
+Hole 1: [1, 21] (Count=2)
+Hole 2: [2, 22] (Count=2)
+Hole 3: [3, 23] (Count=2)
+Hole 4: [4, 24] (Count=2)
+Hole 5: [5] (Count=1)
+Hole 6: [6] (Count=1)
+Hole 7: [7] (Count=1)
+Hole 8: [8] (Count=1)
+Hole 9: [9] (Count=1)
+Hole 10: [10] (Count=1)
+Hole 11: [11] (Count=1)
+Hole 12: [12] (Count=1)
+Hole 13: [13] (Count=1)
+Hole 14: [14] (Count=1)
+Hole 15: [15] (Count=1)
+Hole 16: [16] (Count=1)
+Hole 17: [17] (Count=1)
+Hole 18: [18] (Count=1)
+Hole 19: [19] (Count=1)
+Hole 20: [20] (Count=1)
+
+Holes exceeding capacity: 4
+Overfilled Holes: [1, 2, 3, 4]
+
+✅ Pigeonhole Principle holds: at least one hole has ≥ 2 pigeons.

@@ -1,0 +1,19 @@
+=== Q7: Group Theory & Hamming Code Generator ===
+
+Checking Group Properties under XOR Operation:
+
+Closure: True
+Identity: True
+Inverses Exist: True
+Associative: True
+✅ (Z₂, XOR) forms a Group.
+
+=== (7,4) Hamming Code Generation ===
+Original 4-bit data: 1011
+Hamming(7,4) Code: 0110011
+
+Error introduced at bit position 6: 0110001
+Error detected at position: 6
+Corrected Code: 0110011
+
+✅ Output saved to Q7_output.txt

@@ -1,0 +1,91 @@
+=== Q4: Lattice Verification ===
+
+Poset Relation Matrix:
+[1 1 1 1]
+[0 1 1 1]
+[0 0 1 1]
+[0 0 0 1]
+
+Pair (a1, a1):
+  Upper bounds: ['a1', 'a2', 'a3', 'a4']
+  Lower bounds: ['a1']
+  LUB = a1, GLB = a1
+
+Pair (a1, a2):
+  Upper bounds: ['a2', 'a3', 'a4']
+  Lower bounds: ['a1']
+  LUB = a2, GLB = a1
+
+Pair (a1, a3):
+  Upper bounds: ['a3', 'a4']
+  Lower bounds: ['a1']
+  LUB = a3, GLB = a1
+
+Pair (a1, a4):
+  Upper bounds: ['a4']
+  Lower bounds: ['a1']
+  LUB = a4, GLB = a1
+
+Pair (a2, a1):
+  Upper bounds: ['a2', 'a3', 'a4']
+  Lower bounds: ['a1']
+  LUB = a2, GLB = a1
+
+Pair (a2, a2):
+  Upper bounds: ['a2', 'a3', 'a4']
+  Lower bounds: ['a1', 'a2']
+  LUB = a2, GLB = a2
+
+Pair (a2, a3):
+  Upper bounds: ['a3', 'a4']
+  Lower bounds: ['a1', 'a2']
+  LUB = a3, GLB = a2
+
+Pair (a2, a4):
+  Upper bounds: ['a4']
+  Lower bounds: ['a1', 'a2']
+  LUB = a4, GLB = a2
+
+Pair (a3, a1):
+  Upper bounds: ['a3', 'a4']
+  Lower bounds: ['a1']
+  LUB = a3, GLB = a1
+
+Pair (a3, a2):
+  Upper bounds: ['a3', 'a4']
+  Lower bounds: ['a1', 'a2']
+  LUB = a3, GLB = a2
+
+Pair (a3, a3):
+  Upper bounds: ['a3', 'a4']
+  Lower bounds: ['a1', 'a2', 'a3']
+  LUB = a3, GLB = a3
+
+Pair (a3, a4):
+  Upper bounds: ['a4']
+  Lower bounds: ['a1', 'a2', 'a3']
+  LUB = a4, GLB = a3
+
+Pair (a4, a1):
+  Upper bounds: ['a4']
+  Lower bounds: ['a1']
+  LUB = a4, GLB = a1
+
+Pair (a4, a2):
+  Upper bounds: ['a4']
+  Lower bounds: ['a1', 'a2']
+  LUB = a4, GLB = a2
+
+Pair (a4, a3):
+  Upper bounds: ['a4']
+  Lower bounds: ['a1', 'a2', 'a3']
+  LUB = a4, GLB = a3
+
+Pair (a4, a4):
+  Upper bounds: ['a4']
+  Lower bounds: ['a1', 'a2', 'a3', 'a4']
+  LUB = a4, GLB = a4
+
+✅ This is a Lattice!
+
+✅ Output saved to Q4_output.txt
