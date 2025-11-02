@@ -59,9 +59,6 @@ DM_IA2_ARYAN_LOMTE/
 ├── Q6_output.txt
 └── Q7_output.txt
 
-yaml
-Copy code
-
 Each module automatically:
 - Executes computation.
 - Prints stepwise derivations.
@@ -90,10 +87,8 @@ To run all modules and generate outputs automatically:
 ```bash
 python main.py
 Each script can also be executed individually for focused testing:
+---
 
-bash
-Copy code
-python Q3_Relations_TransitiveClosure.py
 🧭 Output Format Example
 Each output file provides:
 
